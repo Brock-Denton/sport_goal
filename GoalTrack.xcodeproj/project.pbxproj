@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000012E7DCEF700899F17 /* GoalTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000002E7DCEF700899F17 /* GoalTrackApp.swift */; };
+		A10000032E7DCEF700899F17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000022E7DCEF700899F17 /* ContentView.swift */; };
+		A10000052E7DCEF900899F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000042E7DCEF900899F17 /* Assets.xcassets */; };
+		A10000082E7DCEF900899F17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000072E7DCEF900899F17 /* Preview Assets.xcassets */; };
+		A10000102E7DCEF900899F17 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000F2E7DCEF900899F17 /* Game.swift */; };
+		A10000122E7DCEF900899F17 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000112E7DCEF900899F17 /* GameManager.swift */; };
+		A10000142E7DCEF900899F17 /* CreateGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000132E7DCEF900899F17 /* CreateGameView.swift */; };
+		A10000162E7DCEF900899F17 /* ActiveGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000152E7DCEF900899F17 /* ActiveGameView.swift */; };
+		A10000182E7DCEF900899F17 /* EditScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000172E7DCEF900899F17 /* EditScoreView.swift */; };
+		A100001A2E7DCEF900899F17 /* GameHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000192E7DCEF900899F17 /* GameHistoryView.swift */; };
+		A100001C2E7DCEF900899F17 /* GoalTrack.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = A100001B2E7DCEF900899F17 /* GoalTrack.entitlements */; };
+		A10000222E7DCEF900899F17 /* GoalTrackWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000212E7DCEF900899F17 /* GoalTrackWidget.swift */; };
+		A10000242E7DCEF900899F17 /* GameWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000232E7DCEF900899F17 /* GameWidgetView.swift */; };
+		A10000262E7DCEF900899F17 /* WidgetAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000252E7DCEF900899F17 /* WidgetAssets.xcassets */; };
+		A10000282E7DCEF900899F17 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A10000272E7DCEF900899F17 /* Info.plist */; };
+		A100002A2E7DCEF900899F17 /* WidgetExtension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = A10000292E7DCEF900899F17 /* WidgetExtension.entitlements */; };
+		A100002C2E7DCEF900899F17 /* GoalTrackWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A100002B2E7DCEF900899F17 /* GoalTrackWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A100002D2E7DCEF900899F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A100000E2E7DCEF700899F17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A100001E2E7DCEF900899F17;
+			remoteInfo = GoalTrackWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A100002E2E7DCEF900899F17 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A100002C2E7DCEF900899F17 /* GoalTrackWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A10000002E7DCEF700899F17 /* GoalTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackApp.swift; sourceTree = "<group>"; };
+		A10000022E7DCEF700899F17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A10000042E7DCEF900899F17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A10000072E7DCEF900899F17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A100000D2E7DCEF700899F17 /* GoalTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A100000F2E7DCEF900899F17 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A10000112E7DCEF900899F17 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		A10000132E7DCEF900899F17 /* CreateGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameView.swift; sourceTree = "<group>"; };
+		A10000152E7DCEF900899F17 /* ActiveGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveGameView.swift; sourceTree = "<group>"; };
+		A10000172E7DCEF900899F17 /* EditScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScoreView.swift; sourceTree = "<group>"; };
+		A10000192E7DCEF900899F17 /* GameHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistoryView.swift; sourceTree = "<group>"; };
+		A100001B2E7DCEF900899F17 /* GoalTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoalTrack.entitlements; sourceTree = "<group>"; };
+		A100001E2E7DCEF900899F17 /* GoalTrackWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GoalTrackWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000212E7DCEF900899F17 /* GoalTrackWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackWidget.swift; sourceTree = "<group>"; };
+		A10000232E7DCEF900899F17 /* GameWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWidgetView.swift; sourceTree = "<group>"; };
+		A10000252E7DCEF900899F17 /* WidgetAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WidgetAssets.xcassets; sourceTree = "<group>"; };
+		A10000272E7DCEF900899F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10000292E7DCEF900899F17 /* WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A100000A2E7DCEF700899F17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A100001F2E7DCEF900899F17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A100000E2E7DCEF700899F17 = {
+			isa = PBXGroup;
+			children = (
+				A10000192E7DCEF700899F17 /* GoalTrack */,
+				A100002F2E7DCEF900899F17 /* GoalTrackWidget */,
+				A10000182E7DCEF700899F17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A10000182E7DCEF700899F17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A100000D2E7DCEF700899F17 /* GoalTrack.app */,
+				A100001E2E7DCEF900899F17 /* GoalTrackWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A10000192E7DCEF700899F17 /* GoalTrack */ = {
+			isa = PBXGroup;
+			children = (
+				A10000002E7DCEF700899F17 /* GoalTrackApp.swift */,
+				A10000022E7DCEF700899F17 /* ContentView.swift */,
+				A10000302E7DCEF900899F17 /* Models */,
+				A10000312E7DCEF900899F17 /* ViewModels */,
+				A10000322E7DCEF900899F17 /* Views */,
+				A10000042E7DCEF900899F17 /* Assets.xcassets */,
+				A100001B2E7DCEF900899F17 /* GoalTrack.entitlements */,
+				A10000062E7DCEF900899F17 /* Preview Content */,
+			);
+			path = GoalTrack;
+			sourceTree = "<group>";
+		};
+		A10000062E7DCEF900899F17 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A10000072E7DCEF900899F17 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A100002F2E7DCEF900899F17 /* GoalTrackWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A10000212E7DCEF900899F17 /* GoalTrackWidget.swift */,
+				A10000232E7DCEF900899F17 /* GameWidgetView.swift */,
+				A10000252E7DCEF900899F17 /* WidgetAssets.xcassets */,
+				A10000272E7DCEF900899F17 /* Info.plist */,
+				A10000292E7DCEF900899F17 /* WidgetExtension.entitlements */,
+			);
+			path = GoalTrackWidget;
+			sourceTree = "<group>";
+		};
+		A10000302E7DCEF900899F17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A100000F2E7DCEF900899F17 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A10000312E7DCEF900899F17 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A10000112E7DCEF900899F17 /* GameManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A10000322E7DCEF900899F17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A10000132E7DCEF900899F17 /* CreateGameView.swift */,
+				A10000152E7DCEF900899F17 /* ActiveGameView.swift */,
+				A10000172E7DCEF900899F17 /* EditScoreView.swift */,
+				A10000192E7DCEF900899F17 /* GameHistoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A100000C2E7DCEF700899F17 /* GoalTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000332E7DCEF900899F17 /* Build configuration list for PBXNativeTarget "GoalTrack" */;
+			buildPhases = (
+				A10000092E7DCEF700899F17 /* Sources */,
+				A100000A2E7DCEF700899F17 /* Frameworks */,
+				A100000B2E7DCEF700899F17 /* Resources */,
+				A100002E2E7DCEF900899F17 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A10000342E7DCEF900899F17 /* PBXTargetDependency */,
+			);
+			name = GoalTrack;
+			packageProductDependencies = (
+			);
+			productName = GoalTrack;
+			productReference = A100000D2E7DCEF700899F17 /* GoalTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A100001E2E7DCEF900899F17 /* GoalTrackWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000352E7DCEF900899F17 /* Build configuration list for PBXNativeTarget "GoalTrackWidgetExtension" */;
+			buildPhases = (
+				A100001D2E7DCEF900899F17 /* Sources */,
+				A100001F2E7DCEF900899F17 /* Frameworks */,
+				A10000202E7DCEF900899F17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoalTrackWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = GoalTrackWidgetExtension;
+			productReference = A100002B2E7DCEF900899F17 /* GoalTrackWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A100000E2E7DCEF700899F17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A100000C2E7DCEF700899F17 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A100001E2E7DCEF900899F17 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = A10000362E7DCEF900899F17 /* Build configuration list for PBXProject "GoalTrack" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A100000E2E7DCEF700899F17;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A10000182E7DCEF700899F17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A100000C2E7DCEF700899F17 /* GoalTrack */,
+				A100001E2E7DCEF900899F17 /* GoalTrackWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A100000B2E7DCEF700899F17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000082E7DCEF900899F17 /* Preview Assets.xcassets in Resources */,
+				A10000052E7DCEF900899F17 /* Assets.xcassets in Resources */,
+				A100001C2E7DCEF900899F17 /* GoalTrack.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000202E7DCEF900899F17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000282E7DCEF900899F17 /* Info.plist in Resources */,
+				A100002A2E7DCEF900899F17 /* WidgetExtension.entitlements in Resources */,
+				A10000262E7DCEF900899F17 /* WidgetAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A10000092E7DCEF700899F17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000032E7DCEF700899F17 /* ContentView.swift in Sources */,
+				A10000012E7DCEF700899F17 /* GoalTrackApp.swift in Sources */,
+				A10000102E7DCEF900899F17 /* Game.swift in Sources */,
+				A10000122E7DCEF900899F17 /* GameManager.swift in Sources */,
+				A10000142E7DCEF900899F17 /* CreateGameView.swift in Sources */,
+				A10000162E7DCEF900899F17 /* ActiveGameView.swift in Sources */,
+				A10000182E7DCEF900899F17 /* EditScoreView.swift in Sources */,
+				A100001A2E7DCEF900899F17 /* GameHistoryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A100001D2E7DCEF900899F17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000222E7DCEF900899F17 /* GoalTrackWidget.swift in Sources */,
+				A10000242E7DCEF900899F17 /* GameWidgetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A10000342E7DCEF900899F17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A100001E2E7DCEF900899F17 /* GoalTrackWidgetExtension */;
+			targetProxy = A100002D2E7DCEF900899F17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A10000372E7DCEF900899F17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A10000382E7DCEF900899F17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A10000392E7DCEF900899F17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GoalTrack/GoalTrack.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoalTrack/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.GoalTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A100003A2E7DCEF900899F17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GoalTrack/GoalTrack.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoalTrack/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.GoalTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A100003B2E7DCEF900899F17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GoalTrackWidget/WidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GoalTrackWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "GoalTrack Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.GoalTrack.GoalTrackWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A100003C2E7DCEF900899F17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GoalTrackWidget/WidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GoalTrackWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "GoalTrack Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.GoalTrack.GoalTrackWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000332E7DCEF900899F17 /* Build configuration list for PBXNativeTarget "GoalTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000392E7DCEF900899F17 /* Debug */,
+				A100003A2E7DCEF900899F17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000352E7DCEF900899F17 /* Build configuration list for PBXNativeTarget "GoalTrackWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A100003B2E7DCEF900899F17 /* Debug */,
+				A100003C2E7DCEF900899F17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000362E7DCEF900899F17 /* Build configuration list for PBXProject "GoalTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000372E7DCEF900899F17 /* Debug */,
+				A10000382E7DCEF900899F17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A100000E2E7DCEF700899F17 /* Project object */;
+}
